@@ -20,7 +20,7 @@ func TestBasicTheme(t *testing.T) {
 		"clock-mode-colour":            "red",
 		"clock-mode-style":             "24",
 		"mode-style":                   "bg=red",
-		"pane-active-border-style":     "fg=green",
+		"pane-active-border-style":     "fg=red",
 		"pane-border-style":            "default",
 		"window-status-activity-style": "fg=yellow,bg=black",
 		"window-status-current-format": " #I:#W#F ",
@@ -30,8 +30,8 @@ func TestBasicTheme(t *testing.T) {
 	})
 
 	tmuxHasOptions(t, theme, tmux.GlobalSession, tmux.Options{
-		"display-panes-active-colour": "default",
-		"display-panes-colour":        "default",
+		"display-panes-active-colour": "red",
+		"display-panes-colour":        "red",
 		"message-command-style":       "default",
 		"message-style":               "default",
 		"status-interval":             "1",
